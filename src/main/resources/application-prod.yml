@@ -1,0 +1,6 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI}
+  instance:
+    prefer-ip-address: true
