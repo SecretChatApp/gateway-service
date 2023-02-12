@@ -5,3 +5,4 @@ spring:
   application:
     name: @project.build.finalName@
     version: @project.version@
+    description: @project.description@
