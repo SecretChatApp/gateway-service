@@ -23,4 +23,5 @@ public class CreateUserDto {
      @NotNull
      @NotBlank
      String passwordConfirmation;
+     String username;
 }

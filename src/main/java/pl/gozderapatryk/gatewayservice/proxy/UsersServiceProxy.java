@@ -20,7 +20,7 @@ public class UsersServiceProxy {
         return webClient
                 .post()
                 .uri("/users")
-                .body(BodyInserters.fromValue(createUserDtoMono))
+                .body(BodyInserters.fromPublisher(createUserDtoMono, CreateUserDto.class))
                 .retrieve()
                 .bodyToMono(UserDto.class);
     }

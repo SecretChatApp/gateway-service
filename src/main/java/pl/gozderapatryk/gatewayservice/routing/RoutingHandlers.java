@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 public class RoutingHandlers {
     private final UsersServiceProxy usersServiceProxy;
 
-    public Mono<ServerResponse> findByUsername(ServerRequest serverRequest) {
+    public Mono<ServerResponse> createUser(ServerRequest serverRequest) {
         var createUserDto = serverRequest.bodyToMono(CreateUserDto.class);
         return usersServiceProxy
                 .createUser(createUserDto)

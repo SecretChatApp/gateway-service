@@ -14,6 +14,6 @@ public class Routing {
 
     @Bean
     public RouterFunction<ServerResponse> routerFunction(RoutingHandlers routingHandlers) {
-        return route(POST("/users").and(accept(MediaType.APPLICATION_JSON)), routingHandlers::findByUsername);
+        return route(POST("/users").and(accept(MediaType.APPLICATION_JSON)), routingHandlers::createUser);
     }
 }
