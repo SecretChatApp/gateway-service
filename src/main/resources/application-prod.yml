@@ -4,3 +4,7 @@ eureka:
       defaultZone: ${EUREKA_URI}
   instance:
     prefer-ip-address: true
+
+services:
+  userService:
+    baseUrl: ${USER_SERVICE_BASE_URL}
